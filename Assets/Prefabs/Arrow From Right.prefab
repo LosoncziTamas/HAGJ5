@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6319820215902258722}
   - component: {fileID: 6319820215902258723}
   - component: {fileID: 6319820215902258721}
-  - component: {fileID: 6319820215902258720}
+  - component: {fileID: 7502168248195102586}
   m_Layer: 0
   m_Name: Arrow From Right
   m_TagString: Untagged
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6319820215902258720
+--- !u!114 &7502168248195102586
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,8 +119,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6319820215902258748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 329c9db2c000e41baa0a498f2f755083, type: 3}
+  m_Script: {fileID: 11500000, guid: 228fd0756c444f71a225803a2b411fad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameProperties: {fileID: 11400000, guid: 85af71c68e8594d40969ca895a2a2fa9, type: 2}
   direction: {x: -1, y: 0}
-  speed: 4
