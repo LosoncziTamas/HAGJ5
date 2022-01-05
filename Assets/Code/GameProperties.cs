@@ -8,6 +8,7 @@ namespace Code
         public float bulletSpeed;
         public float characterSpeed;
         public float characterGravity;
-        public Rect boundaries;
+        public float levelEdgeLeftX;
+        public float levelEdgeRightX;
     }
 }

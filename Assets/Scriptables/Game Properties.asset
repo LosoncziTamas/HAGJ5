@@ -15,9 +15,5 @@ MonoBehaviour:
   bulletSpeed: 2.45
   characterSpeed: 1
   characterGravity: 0.3
-  boundaries:
-    serializedVersion: 2
-    x: -10
-    y: -5
-    width: 20
-    height: 12
+  levelEdgeLeftX: -10
+  levelEdgeRightX: 10

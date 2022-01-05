@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,12 +8,24 @@ namespace Code
     public class BulletSpawner : MonoBehaviour
     {
         [SerializeField] private List<Bullet> _bullets;
+        private bool _shouldFire = true;
 
         private void Start()
         {
             foreach (var bullet in _bullets)
             {
                 bullet.gameObject.SetActive(false);
+            }
+
+            StartCoroutine(FireBullets());
+        }
+
+        private IEnumerator FireBullets()
+        {
+            while (_shouldFire)
+            {
+                Fire();
+                yield return new WaitForSeconds(0.5f);
             }
         }
 
@@ -27,17 +39,16 @@ namespace Code
                 bullet.Fire(this);
             }
         }
-
-        private void Update()
-        {
-            
-        }
-
+        
         private void OnGUI()
         {
             if (GUILayout.Button("Fire"))
             {
-                Fire();
+                _shouldFire = !_shouldFire;
+                if (_shouldFire)
+                {
+                    StartCoroutine(FireBullets());
+                }
             }
         }
 
