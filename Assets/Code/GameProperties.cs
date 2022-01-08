@@ -10,5 +10,6 @@ namespace Code
         public float characterGravity;
         public float levelEdgeLeftX;
         public float levelEdgeRightX;
+        public float fireDelay;
     }
 }

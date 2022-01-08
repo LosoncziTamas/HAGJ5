@@ -68,6 +68,7 @@ MonoBehaviour:
   - {fileID: 4104413024809387481}
   - {fileID: 4104413023452833356}
   - {fileID: 4104413025180497778}
+  _gameProperties: {fileID: 11400000, guid: 85af71c68e8594d40969ca895a2a2fa9, type: 2}
 --- !u!1001 &2065519954595182744
 PrefabInstance:
   m_ObjectHideFlags: 0
